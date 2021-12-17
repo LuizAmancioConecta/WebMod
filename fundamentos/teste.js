@@ -1,5 +1,4 @@
-let teste = () => {
-    console.log("teste")
-}
+let teste = () => console.log("teste")
+
 
 teste()
