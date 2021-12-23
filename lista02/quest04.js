@@ -1,4 +1,3 @@
-const maiorOuIgual = (x, y) => {
-    return x >= y
-}
+const maiorOuIgual = (x, y) => x >= y
+
 
