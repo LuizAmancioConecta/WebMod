@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Basico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="http://localhost:3003/usuarios" method="post">
+        <input type="hidden" name="id">
+        <input type="text" name="name">
+        <input type="password" name="senha">
+        <textarea name="bio" cols="30" rows="10"></textarea>
+        <div>
+            <input type="radio" name="tipo" value="admin"> Admin
+            <input type="radio" name="tipo" value="regular"> Regular
+            <input type="radio" name="tipo" value="professor"> Professor
+        </div>
+        <div>
+            <input type="checkbox" name="ativo"> Ativo
+        </div>
+
+        <select name="estado">
+            <option value="">Selecione Estado</option>
+            <option value="es">ES</option>
+            <option value="sp">SP</option>
+            <option value="mg">MG</option>
+            <option value="rj">RJ</option>
+        </select>
+
+        <select name="interesses" multiple size="4">
+            <option value="">Selecione Linguagem</option>
+            <option value="js">Javascript</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="ruby">Ruby</option>
+        </select>
+        <button formaction="http://localhost:3003/usuarios">Incluir</button>
+        <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+    </form>
+</body>
+</html>
+
